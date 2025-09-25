@@ -236,7 +236,7 @@ blockquote{
   background-image: url("img/h5-parallax-img-2.jpg");
 
   /* Set a specific height */
-  min-height: 100%;
+  min-height: 500px;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -245,8 +245,19 @@ blockquote{
   background-size: cover;
 }
 
-.parallax>figure>img{
-    width:100%;
+.parralax>div>h3{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #f1f0f0;
+    padding: 1em;
+}
+
+.parralax>div>p{
+    font-style: italic;
+    color: #f1f0f0;
+    text-align: center;
 }
 
 /* section maps */
