@@ -1,0 +1,267 @@
+/* ******************************General**************************************************** */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+  --blue: #1e90ff;
+  --white: #ffffff;
+}
+
+/* ***********************************En-tête********************************************************* */
+
+header{
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    justify-content: space-between;
+    padding: 20px;
+    position: sticky;
+    top: 0px;
+    z-index: 4;
+    
+}
+
+a
+{
+    text-decoration:none;
+    color: white;
+
+}
+h1
+{
+    font-size: 20px;
+}
+a:visited{
+    color: beige;
+}
+
+ .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+  
+ 
+
+
+nav li{
+    display: inline;
+    font-size: 20px;
+    margin: 5px;
+    padding: 5px;
+}
+nav a:hover {
+    color: rgb(175, 175, 175);
+
+}
+
+
+
+.menu > h1 {
+  
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+}
+
+.liste {
+  
+  
+
+  font-size: 30px;
+}
+
+.white{
+    color: white;
+}
+
+
+/* *********premiere section */
+.first-section{
+	display: flex;
+    flex-direction: column;
+    background-image:  url("img/h5-revolution-img-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;   
+    background-position: center; 
+    height: 100vh; 
+    justify-content: space-between;
+   
+  
+   
+   
+    
+
+}
+.logo{
+    display: flex;
+    z-index: 2;
+    width: 100%;
+    
+    
+}
+.logo>img{
+    margin: auto;
+    width: 30%;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+blockquote{
+    background-color: rgb(197, 157, 95);
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #f1f0f0;
+    padding: 1em;
+    
+}
+/* 
+*****************************************deuxième section ************************************ */
+
+.second-section{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.second-section>article{
+
+    text-align: center;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.second-section>article>div{
+
+    width:90%;
+    margin: auto;
+
+}
+.second-section>figure{
+    width:50%;
+    text-align: center;
+}
+.second-section>figure>img{
+    width:50%;
+    
+}
+
+ .second-section>article>div>h2{
+ padding-bottom: 1em;
+} 
+.second-section>article>div>h3{
+    padding-bottom: 1em;
+}
+
+
+.second-section>article>div>p{
+ padding-bottom: 1em;
+} 
+
+
+/* ********************* section galleries */
+
+.gallerie{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallerie>figure{
+
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.gallerie>figure>img{
+    width: 25%;
+}
+
+
+
+/* ******************* Section service */
+
+.services{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.services>article{
+
+    text-align: center;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+.services>article>div{
+
+    width:100%;
+    margin: auto;
+
+}
+.services>figure{
+    width:100%;
+    text-align: center;
+}
+.services>figure>img{
+    width:100%;
+    
+}
+
+.services>article>div>h3{
+    padding-bottom: 1em;
+}
+
+
+.services>article>div>p{
+ padding-bottom: 1em;
+} 
+
+/* section parralax */
+
+.parallax {
+  /* The image used */
+  background-image: url("img/h5-parallax-img-2.jpg");
+
+  /* Set a specific height */
+  min-height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax>figure>img{
+    width:100%;
+}
+
+/* section maps */
+
+
+
+/* ********** section footer */
+footer{
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #f1f0f0;
+    padding: 2em;
+}
+
+/* verification */
