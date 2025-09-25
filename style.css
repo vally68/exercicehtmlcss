@@ -251,13 +251,17 @@ blockquote{
     font-weight: bold;
     text-transform: uppercase;
     color: #f1f0f0;
-    padding: 1em;
+    padding-top: 150px;
+    
+    
 }
 
 .parralax>div>p{
     font-style: italic;
     color: #f1f0f0;
     text-align: center;
+
+
 }
 
 /* section maps */
