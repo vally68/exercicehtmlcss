@@ -231,7 +231,7 @@ blockquote{
 
 /* section parralax */
 
-.parallax {
+.parralax {
   /* The image used */
   background-image: url("img/h5-parallax-img-2.jpg");
 
@@ -262,7 +262,7 @@ footer{
     text-transform: uppercase;
     color: #f1f0f0;
     padding: 2em;
-    border-radius: 5px;
+  
 }
 
 /* verification */
