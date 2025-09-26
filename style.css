@@ -165,27 +165,53 @@ blockquote{
 } 
 
 
+
 /* ********************* section galleries */
 
-.gallerie{
-    display: flex;
-    flex-wrap: wrap;
+/* Mise en page simple de la galerie */
+.gallerie {
+  display: flex;
+  flex-wrap: wrap;
+ 
+}
+ 
+/* On peut se passer du <div> intermédiaire : chaque figure prend 25% */
+.gallerie figure {
+  flex: 1 1 calc(25% - 12px);
+
+  background: rgb(197, 157, 95);       /* votre couleur */
+  overflow: hidden;                     /* optionnel, coupe débords */
+}
+ 
+.gallerie img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: opacity .25s ease;        /* petite transition */
+}
+ 
+/* La magie : au survol, l'image se mélange avec la couleur du fond */
+.gallerie figure:hover img {
+  mix-blend-mode: multiply;             /* mélange avec le background du figure */
+  opacity: 0.85;                        /* laisse un peu de couleur passer */
+  cursor: pointer;
+  transform: scale(1.2);
+  animation-duration: 3s;
+  animation-name: cross;
+
 }
 
-.gallerie>figure{
-
-    text-align: center;
+@keyframes cross {
+  from {
+    margin-left: 100%;
     width: 100%;
-    display: flex;
-    flex-direction: row;
-    
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
-
-.gallerie>figure>img{
-    width: 25%;
-}
-
-
 
 /* ******************* Section service */
 
