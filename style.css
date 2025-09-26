@@ -127,6 +127,7 @@ blockquote{
     display: flex;
     flex-wrap: wrap;
     
+    
 }
 
 .second-section>article{
@@ -164,7 +165,27 @@ blockquote{
  padding-bottom: 1em;
 } 
 
+.second-section>figure{
+    width:50%;
+    text-align: center;
+    background-image:  url("img/h5-el-holder-img-1-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;   
+    background-position: center; 
+    height: 50vh; 
+    justify-content: space-between;
+}
 
+.second-section figurespan{
+    width:50%;
+    text-align: center;
+    background-image:  url("img/h5-el-holder-img-2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;   
+    background-position: center; 
+    height: 100vh; 
+    justify-content: space-between;
+}
 
 /* ********************* section galleries */
 
@@ -189,6 +210,24 @@ blockquote{
   height: auto;
   transition: opacity .25s ease;        /* petite transition */
 }
+
+.gallerie div {
+  display: flex;
+  color: #ffffff;
+  font-size: 50px;
+  position: absolute;
+  padding: 150px;
+  visibility: hidden;
+}
+.gallerie>figure:hover div{
+  display: flex;
+  color: #ffffff;
+  font-size: 50px;
+  position: absolute;
+  padding: 150px;
+
+ 
+}
  
 /* La magie : au survol, l'image se mélange avec la couleur du fond */
 .gallerie figure:hover img {
@@ -196,20 +235,18 @@ blockquote{
   opacity: 0.85;                        /* laisse un peu de couleur passer */
   cursor: pointer;
   transform: scale(1.2);
-  animation-duration: 3s;
-  animation-name: cross;
+  
+  /* animation-duration: 3s;
+  animation-name: cross; */
 
 }
 
 @keyframes cross {
   from {
-    margin-left: 100%;
-    width: 100%;
+    transform: rotate(0deg);
   }
-
   to {
-    margin-left: 0%;
-    width: 100%;
+    transform: rotate(360deg);
   }
 }
 
@@ -218,6 +255,7 @@ blockquote{
 .services{
     display: flex;
     flex-wrap: wrap;
+    
 }
 
 .services>article{
@@ -227,32 +265,51 @@ blockquote{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 3em;
+    margin-bottom: 3em;
 
 }
 .services>article>div{
 
     width:100%;
     margin: auto;
+  
 
 }
 .services>figure{
     width:100%;
     text-align: center;
+   
 }
-.services>figure>img{
-    width:100%;
+
+
+
+.services figure img{
+        
+    padding-left: auto;
+   
     
 }
 
-.services>article>div>h3{
-    padding-bottom: 1em;
+.services article div h3{
+    padding-top: 1em;
+    margin-left: auto;
+    width: 80%;
+    
 }
 
+.services article h3:hover{
+   color: rgb(197, 157, 95);
+  
 
-.services>article>div>p{
- padding-bottom: 1em;
+    
+}
+
+.services article div p{
+ width: 80%;
+ margin-left: auto;
+  
+
 } 
 
 /* section parralax */
@@ -262,7 +319,7 @@ blockquote{
   background-image: url("img/h5-parallax-img-2.jpg");
 
   /* Set a specific height */
-  min-height: 500px;
+  min-height: 300px;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -286,6 +343,7 @@ blockquote{
     font-style: italic;
     color: #f1f0f0;
     text-align: center;
+    padding-top: 1em;
 
 
 }
