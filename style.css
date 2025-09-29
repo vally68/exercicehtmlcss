@@ -94,7 +94,7 @@ nav a:hover {
   #topnav_responsive_menu {
    
     display: block;
-    position: absolute;
+    position: fixed;
     margin: 0;
     right: 0;
     top: 0;
@@ -103,7 +103,7 @@ nav a:hover {
 
     z-index: 99;
 
-    transform-origin: 0% 0%;
+    transform: translateX(100%); 
     transform: translate(200%, 0);
 
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
@@ -141,7 +141,7 @@ nav a:hover {
 
   /* And let's slide it in from the right */
   #topnav_responsive_menu.open {
-    transform: none;
+    transform: translateX(0);
     position: fixed;
   }
 
@@ -239,6 +239,15 @@ nav a:hover {
     transform: rotate(-45deg);
   }
 
+/* ********** images 1e section************** */
+
+#first-section-responsive .logo{
+
+}
+
+
+
+  /* *************section galleries******************************** */
 #respon {
   display: flex;
   flex-wrap: wrap;
@@ -250,6 +259,16 @@ nav a:hover {
   
 }
   
+#respon figure:hover div{
+  display: flex;
+  color: #ffffff;
+  font-size: 150px;
+  position: absolute;
+  padding: auto;
+ visibility: hidden;
+ 
+}
+
 }
 
 
