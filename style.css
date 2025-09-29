@@ -160,6 +160,14 @@ blockquote{
     justify-content: space-between;
 } */
 
+.second-section button{
+   background-color: orange;
+   border: 0px;
+   color: white;
+   padding: 1em;
+   border-radius: 30px;
+}
+
 /* ********************* section galleries */
 
 /* Mise en page simple de la galerie */
